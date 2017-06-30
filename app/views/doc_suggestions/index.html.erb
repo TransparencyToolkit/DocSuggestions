@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Doc Suggestions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>Title</th>
+      <th>Keywords</th>
+      <th>Email pgp</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @doc_suggestions.each do |doc_suggestion| %>
+      <tr>
+        <td><%= doc_suggestion.url %></td>
+        <td><%= doc_suggestion.title %></td>
+        <td><%= doc_suggestion.keywords %></td>
+        <td><%= doc_suggestion.email_pgp %></td>
+        <td><%= link_to 'Show', doc_suggestion %></td>
+        <td><%= link_to 'Edit', edit_doc_suggestion_path(doc_suggestion) %></td>
+        <td><%= link_to 'Destroy', doc_suggestion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Doc Suggestion', new_doc_suggestion_path %>

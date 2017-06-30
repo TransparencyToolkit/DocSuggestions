@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @doc_suggestion.url %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @doc_suggestion.title %>
+</p>
+
+<p>
+  <strong>Keywords:</strong>
+  <%= @doc_suggestion.keywords %>
+</p>
+
+<p>
+  <strong>Email pgp:</strong>
+  <%= @doc_suggestion.email_pgp %>
+</p>
+
+<%= link_to 'Edit', edit_doc_suggestion_path(@doc_suggestion) %> |
+<%= link_to 'Back', doc_suggestions_path %>

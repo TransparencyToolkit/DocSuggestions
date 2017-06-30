@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  url: MyString
+  title: MyString
+  keywords: MyString
+  email_pgp: MyString
+
+two:
+  url: MyString
+  title: MyString
+  keywords: MyString
+  email_pgp: MyString
